@@ -1,0 +1,17 @@
+package com.capgemini.librarymanagementsystemjdbc.dto;
+
+import java.util.Date;
+
+import lombok.Data;
+@Data
+public class BookBean {
+	private String bname;
+	private int bid;
+	private String author;
+	private String category;
+	private String publishername;
+	private int copies;
+	private int copyrigt;
+	private Date dateAdded;
+	
+}

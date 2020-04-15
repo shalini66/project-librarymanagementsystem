@@ -1,0 +1,17 @@
+package com.capgemini.librarymanagement.factory;
+
+import com.capgemini.librarymanagement.dao.AdminDAO;
+import com.capgemini.librarymanagement.dao.AdminDAOImp;
+import com.capgemini.librarymanagement.dao.UsersDAO;
+import com.capgemini.librarymanagement.dao.UsersDAOImp;
+import com.capgemini.librarymanagement.service.UsersService;
+import com.capgemini.librarymanagement.service.UsersServiceImp;
+
+public class UserFactory {
+	public static UsersDAO getUsersDAO() {
+		return new UsersDAOImp();
+	}
+	public static UsersService getUsersService() {
+		return new UsersServiceImp();
+	}
+}
